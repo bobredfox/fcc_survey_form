@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Survey for weather!</title>
         <link rel="stylesheet" href="./ressources/css/style.css">
     </head>
     <body>
         <main>
             <h1 id="title">Survey for weather!</h1>
             <p id="description">This is a survey!</p>
-            <form id="survey-form">
-                <input id="name" type="text" placeholder="your name" required>
+            <form id="survey-form" class="grid-container">
+                <label for="name" id="name-label">
+                    Name<input id="name" type="text" placeholder="your name" required>
+                </label>
+                
                 <input id="email" type="email" placeholder="your@email.here" required>
                 <input id="number" type="number" placeholder="number" min="0" max="100">
                 <select name="Weathers" id="dropdown">

@@ -1,9 +1,28 @@
 body {
     background-color: gray;
+    font-family: monospace;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+
+#name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#email {
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
