@@ -6,24 +6,24 @@
     </head>
     <body>
         <main>
-            <div class="flex-container">
+            <div class="flex-column mainsite">
                 <h1 id="title">Survey for improvment of support</h1>
                 <p id="description">Thanks for taking some time to improve our support.</p>
             </div>
-            <form id="survey-form" class="flex-container">
+            <form id="survey-form" class="flex-column mainsite">
                 <hr>
-                <p class="label-box">Please insert first your name, e-Mail address and age.</p>
-                <label for="name" id="name-label" class="label-box">
+                <p class="flex-column label-box">Please insert first your name, e-Mail address and age.</p>
+                <label for="name" id="name-label" class="flex-column label-box">
                     Name<input id="name" type="text" placeholder="your name" required>
                 </label>
-                <label for="email" id="email-label" class="label-box">
+                <label for="email" id="email-label" class="flex-column label-box">
                     Email<input id="email" type="email" placeholder="your@email.here" required>
                 </label>
                 <div class="flex-row">
-                    <label for="number" id="number-label" class="multi-label-box">
+                    <label for="number" id="number-label" class="flex-column multi-label-box">
                         Age<br><input id="number" type="number" placeholder="number" min="0" max="100">
                     </label>
-                    <label for="dropdown" class="multi-label-box">
+                    <label for="dropdown" class="flex-column multi-label-box">
                     Gender<br><select name="gender" id="dropdown">
                         <option value="male">male</option>
                         <option value="female">female</option>
@@ -32,7 +32,7 @@
                     </label>
                 </div>
                 <hr>
-                <div id="radio-container" class="label-box">
+                <div id="radio-container" class="flex-column label-box">
                 <p>What did you liked the most about our support?</p>
                 <label for="nice-support">
                     <input id="nice-support" type="radio" name="good-selection" value="nice">The support was very nice!
@@ -44,7 +44,7 @@
                     <input id="good-solution" type="radio" name="good-selection" value="solution">The support offered a very good solution.
                 </label>
                 </div>
-                <div id="checkbox-container" class="label-box">
+                <div id="checkbox-container" class="flex-column label-box">
                     <p>What do you think can we do even better?</p>
                     <label for="aviability">
                         <input id="aviability" type="checkbox" name="selection" value="aviability">Be better reachable.
@@ -57,8 +57,8 @@
                     </label>
                     </div>
                 <hr>
-                <p class="label-box">And now some final comments:</p>
-                <label for="comments" id="comment-label" class="label-box">
+                <p class="flex-column label-box">And now some final comments:</p>
+                <label for="comments" id="comment-label" class="flex-column label-box">
                     <textarea id="comments" rows="4" cols="50"></textarea>
                 </label>
                 <button id="submit">Submit</button>

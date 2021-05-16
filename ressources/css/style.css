@@ -20,24 +20,9 @@ main {
 }
 
 
-.flex-container{
+.flex-column{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-}
-
-.label-box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 5px;
-}
-
-.multi-lable-box {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
 }
 
 .flex-row {
@@ -48,12 +33,28 @@ main {
     margin-top: 10px;
 }
 
+.mainsite{
+    width: 80%;
+    align-items: center;
+}
+
+.label-box {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.multi-lable-box {
+    width: 30%;
+}
+
+
+
 #comments {
     resize: none;
 }
 
 #number-label {
-    width: 50%;
+    width: 30%;
 }
 
 hr {
