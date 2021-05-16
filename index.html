@@ -18,11 +18,17 @@
                 <label for="number" id="number-label" class="label-box">
                     Number<input id="number" type="number" placeholder="number" min="0" max="100">
                 </label>
-                
-                <select name="Weathers" id="dropdown">
+                <label for="job-hobby">
+                    <input id="job-hobby" type="radio" name="job-selection">Hobbyist
+                </label>
+                <select name="weathers" id="dropdown">
                     <option value="sunny">sunny</option>
-                    <option value="sunny">rainy</option>
+                    <option value="rainy">rainy</option>
+                    <option value="cloudy">cloudy</option>
                 </select>
+                <label for="comments" id="comment-label" class="label-box">
+                    <textarea id="comments" rows="4" cols="50"></textarea>
+                </label>
                 <button id="submit">Submit</button>
             </form>
         </main>
