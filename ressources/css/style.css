@@ -37,6 +37,16 @@ main {
     grid-column-end: 5;
 }
 
+#radio-container{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#checkbox-container{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
 #comments {
     resize: none;
 }

@@ -7,7 +7,7 @@
     <body>
         <main>
             <h1 id="title">Survey for weather!</h1>
-            <p id="description">This is a survey!</p>
+            <p id="description">This is a survey for weather-observation</p>
             <form id="survey-form" class="grid-container">
                 <label for="name" id="name-label" class="label-box">
                     Name<input id="name" type="text" placeholder="your name" required>
@@ -18,9 +18,22 @@
                 <label for="number" id="number-label" class="label-box">
                     Number<input id="number" type="number" placeholder="number" min="0" max="100">
                 </label>
+                <div id="radio-container">
                 <label for="job-hobby">
                     <input id="job-hobby" type="radio" name="job-selection">Hobbyist
+                </label><br>
+                <label for="job-pro">
+                    <input id="job-pro" type="radio" name="job-selection">Professional
                 </label>
+                </div>
+                <div id="checkbox-container">
+                    <label for="checkbox1">
+                        <input id="checkbox1" type="checkbox" name="selection">Hobbyist
+                    </label><br>
+                    <label for="checkbox2">
+                        <input id="checkbox2" type="checkbox" name="selection">Professional
+                    </label>
+                    </div>
                 <select name="weathers" id="dropdown">
                     <option value="sunny">sunny</option>
                     <option value="rainy">rainy</option>
