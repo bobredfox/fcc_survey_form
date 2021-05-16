@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Survey for weather!</title>
+        <title>Survey for support improvement</title>
         <link rel="stylesheet" href="./ressources/css/style.css">
     </head>
     <body>
         <main>
-            <h1 id="title">Survey for weather!</h1>
-            <p id="description">This is a survey for weather-observation</p>
-            <form id="survey-form" class="grid-container">
+            <div class="flex-container">
+                <h1 id="title">Survey for improvment of support</h1>
+                <p id="description">Thanks for taking some time to improve our support.</p>
+            </div>
+            <form id="survey-form" class="flex-container">
+                <hr>
+                <p class="label-box">Please insert first your name, e-Mail address and age.</p>
                 <label for="name" id="name-label" class="label-box">
                     Name<input id="name" type="text" placeholder="your name" required>
                 </label>
                 <label for="email" id="email-label" class="label-box">
                     Email<input id="email" type="email" placeholder="your@email.here" required>
                 </label>
-                <label for="number" id="number-label" class="label-box">
-                    Number<input id="number" type="number" placeholder="number" min="0" max="100">
-                </label>
-                <div id="radio-container">
-                <label for="job-hobby">
-                    <input id="job-hobby" type="radio" name="job-selection">Hobbyist
+                <div class="flex-row">
+                    <label for="number" id="number-label" class="multi-label-box">
+                        Age<br><input id="number" type="number" placeholder="number" min="0" max="100">
+                    </label>
+                    <label for="dropdown" class="multi-label-box">
+                    Gender<br><select name="gender" id="dropdown">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                    </select>
+                    </label>
+                </div>
+                <hr>
+                <div id="radio-container" class="label-box">
+                <p>What did you liked the most about our support?</p>
+                <label for="nice-support">
+                    <input id="nice-support" type="radio" name="good-selection" value="nice">The support was very nice!
                 </label><br>
-                <label for="job-pro">
-                    <input id="job-pro" type="radio" name="job-selection">Professional
+                <label for="fast-response">
+                    <input id="fast-response" type="radio" name="good-selection" value="fast">The support responded very fast.
+                </label>
+                <label for="good-solution">
+                    <input id="good-solution" type="radio" name="good-selection" value="solution">The support offered a very good solution.
                 </label>
                 </div>
-                <div id="checkbox-container">
+                <div id="checkbox-container" class="label-box">
                     <label for="checkbox1">
                         <input id="checkbox1" type="checkbox" name="selection">Hobbyist
                     </label><br>
@@ -34,11 +52,8 @@
                         <input id="checkbox2" type="checkbox" name="selection">Professional
                     </label>
                     </div>
-                <select name="weathers" id="dropdown">
-                    <option value="sunny">sunny</option>
-                    <option value="rainy">rainy</option>
-                    <option value="cloudy">cloudy</option>
-                </select>
+                <hr>
+                <p class="label-box">And now some final comments:</p>
                 <label for="comments" id="comment-label" class="label-box">
                     <textarea id="comments" rows="4" cols="50"></textarea>
                 </label>
