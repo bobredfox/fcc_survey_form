@@ -9,12 +9,16 @@
             <h1 id="title">Survey for weather!</h1>
             <p id="description">This is a survey!</p>
             <form id="survey-form" class="grid-container">
-                <label for="name" id="name-label">
+                <label for="name" id="name-label" class="label-box">
                     Name<input id="name" type="text" placeholder="your name" required>
                 </label>
+                <label for="email" id="email-label" class="label-box">
+                    Email<input id="email" type="email" placeholder="your@email.here" required>
+                </label>
+                <label for="number" id="number-label" class="label-box">
+                    Number<input id="number" type="number" placeholder="number" min="0" max="100">
+                </label>
                 
-                <input id="email" type="email" placeholder="your@email.here" required>
-                <input id="number" type="number" placeholder="number" min="0" max="100">
                 <select name="Weathers" id="dropdown">
                     <option value="sunny">sunny</option>
                     <option value="sunny">rainy</option>
